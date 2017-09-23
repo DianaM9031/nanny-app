@@ -1,0 +1,112 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.rcorners6 {
+    border-radius: 20px 20px 0px 0px;
+    background: none;
+    padding: 10px; 
+} 
+
+.rcorners4 {
+    border-radius: 0px 0px 20px 20px;
+    background: none;
+    padding: 10px; 
+} 
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+    border-color: #E42786;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+	Ratings Stars
+	(with as little code as possible)
+*/
+$filled-star-color: #00A099;
+$empty-star-color: #F9C8D3;
+$star-size: 17px;
+
+.rating {
+    direction: rtl;
+    font-size: $star-size;
+    unicode-bidi: bidi-override;
+    position: relative;
+    span.star {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        &:hover {
+            cursor: pointer;
+        }
+        &:before {
+            color: $empty-star-color;
+            content: "\2606";
+        }
+        &:hover:before, 
+        &:hover ~ span.star:before {
+            color: $filled-star-color;
+            content: "\2605";
+        }
+        &:hover:after {
+            direction: ltr;
+            content: attr(title);
+            position: absolute;
+            left: 0;
+            bottom: -22px;
+            white-space: nowrap;
+            font: normal 14px/normal Arial, Helvetica, sans-serif;
+        }
+    }
+}
+.ratings {
+    width: 5*$star-size;
+    height: $star-size;
+    display: inline-block;
+    position: relative;
+    &:before,
+    &:after{
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $star-size;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:before {
+      color: $empty-star-color;
+      content: "\2606\2606\2606\2606\2606";
+    }
+    &:after {
+      color: $filled-star-color;
+      content: "\2605\2605\2605\2605\2605";
+      overflow: hidden;
+    }
+}
+
+

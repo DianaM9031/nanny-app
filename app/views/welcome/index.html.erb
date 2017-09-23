@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <!-- Custom Fonts -->
+    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/assets/jenna_sue.css" />
+
+    <!-- Theme CSS -->
+    <link href="/assets/agency.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <!--<a class="navbar-brand page-scroll" href="#page-top">Nannyapp</a>-->
+                <img  class=" page-scroll" src="<%= image_path( 'logoNannyappFondo.png' ) %>">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#quienes-somos">Quienes somos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Videos</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#servicios">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#nannies">Nuestras nannies</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Nuestro equipo</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#aliados">Aliados</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contactanos">Contactenos</a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-light-gray">
+        <div class="container">
+        <div class="intro-text row">
+                <div class="col-md-8">
+                    <div class="col-md-4">
+                        
+                        <img src="<%= image_path( 'BotonQuieresser.png' ) %>" alt="">                         
+                        <h5>Quieres <br/>ser Nanny?</h5>
+                        <br/>
+                        <br/>
+                        <img src="<%= image_path( 'Botonayuda.png' ) %>"  alt=""> 
+                        
+                        <h5>Necesitas <br/>nuestra ayuda</h5>
+                        
+                    </div>         
+                    <div class="col-md-8" >
+                        <h3 class="text-muted">
+                        Nuestro objetivo es
+                        cuidar y atender menores
+                        de 12 años en hogares
+                        En situaciones de apremio...
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-4" style="background-color: #00A099;">
+                        <h5 class="text-muted_white">
+                        Si tú niño amaneció malito
+                        y no tienes quien lo cuide...
+                        </h5>
+                        <img height="30" width="100" src="<%= image_path( 'nanny_app_logo_letras.png' ) %>"  alt=""> 
+                        <h5 class="text-muted_white">te apoya </h5>
+                        <hr/>
+                        <h5 class="text-muted_white">
+                        Se te hizo tarde en la oficina...
+                        </h5>
+                        <img height="30" width="100" src="<%= image_path( 'nanny_app_logo_letras.png' ) %>"  alt=""> 
+                        <h5 class="text-muted_white">te apoya </h5>
+                                                                  
+                </div>                
+            </div>        
+        <!--
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Our Studio!</div>
+                <div class="intro-heading">It's Nice To Meet You</div>
+                <a href="#quienes-somos" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+        -->
+    </header>
+
+    <!-- Services Section -->
+    <section id="quienes-somos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="section-heading-left titulo">Que hacemos?</h2>
+                    <p class="text-muted">Contactamos personas
+                        que necesitan ayuda
+                        con personas que
+                        requieren ayuda</p>            
+                </div>
+                <div class="col-md-8">
+                    <img src="<%= image_path( 'QuienesSomos.png' ) %>" class="img-responsive" alt="">   
+                </div>                
+            </div>            
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="col-md-6">
+                        <div>
+                            <iframe width="300" height="200" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                            </iframe>    
+                        </div>
+                        <div>
+                            <iframe src="http://www.youtube.com/embed/4aQwT3n2c1Q" height="200" width="300" allowfullscreen="" frameborder="0">
+                            </iframe>    
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <iframe src="http://www.youtube.com/embed/4aQwT3n2c1Q" height="200" width="300" allowfullscreen="" frameborder="0">
+                            </iframe>    
+                        </div>
+                        <div>
+                            <iframe src="http://www.youtube.com/embed/4aQwT3n2c1Q" height="200" width="300" allowfullscreen="" frameborder="0">
+                            </iframe>    
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-md-4">
+                    <h2 class="section-heading-left titulo">Experiencias de Usuario</h2>
+                    <p class="text-muted">Nuestras niñeras son madres
+                    con vulnerabilidad social, por
+                    condición de edad y educación.
+                    Están dispuesta a dar tanto amor
+                    como a sus propios hijos</p>
+                </div>                
+            </div>            
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="servicios">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading-left titulo">Servicios<br/>que atendemos</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="<%= image_path( 'servicios/NannyGoogmorning_2.png' ) %>" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <!--<h4>Nanny Good Morning</h4>-->
+                                    <h4 class="subheading">Nanny Good Morning</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Servicio diseñado para las madres que tenga esos los
+                                    días en que pasa algo sorpresivo y requieran un servicio
+                                    en menos de dos horas de llegada al hogar por
+                                    cuatro horas, se ha identificado que existen dos espacios
+                                    muy neurálgicos, sobre todo para las madres solteras,
+                                    en horarios de 6 am a 4 pm</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="<%= image_path( 'servicios/NannyTarde_2.png' ) %>" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">                                    
+                                    <h4 class="subheading">Nanny Tarde</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Un servicio diseñado para un día completo en el que
+                                    las madres requieren un día entero al cuidado de sus
+                                    hijos por eventualidades como no ida al colegio de los
+                                    niños, o que la persona que lo cuida al niños le presentó
+                                    algún tipo de incidente, se ha identificado que el
+                                    horario está entre 4 pm a 8 pm</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="<%= image_path( 'servicios/NannyNight_2.png' ) %>" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">                                    
+                                    <h4 class="subheading">Nanny Night</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Orientado a madres que tengan compromisos sociales
+                                    en la noche, como cenas de negocios, eventos de lanzamientos,
+                                    o algún tipo de celebración en la noche, se
+                                    ha identificado que el pico alto está en los viernes y
+                                    sábado en la noche desde las 8 pm hasta las 2 am y de
+                                    lunes a viernes hasta las 10 pm</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="<%= image_path( 'servicios/NannyFinde_2.png' ) %>" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">                                    
+                                    <h4 class="subheading">Nanny Finde</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Servicio enfocado específicamente madres y padres
+                                    que desean tener un momento en pareja para retomar
+                                    la vida afectiva de su hogar con el fin de compartir en
+                                    pareja, las validaciones ha manifestado que el pico alto
+                                    está en los sábados tarde noche desde las 4 pm hasta
+                                    y los días entre semana hasta las 9 pm</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="<%= image_path( 'servicios/NannyRelax_2.png' ) %>" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">                                    
+                                    <h4 class="subheading">Nanny Relax</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Servicio enfocado específicamente madres y padres
+                                    que desean tener un momento en familia para retomar
+                                    un día de ocio, las validaciones ha manifestado que el
+                                    pico alto está en los domingos en el día desde las 10 am
+                                    hasta las 7 pm</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div class="row">
+            <div class="col-lg-12 text-center rcorners6" style="background-color: #00A099;">
+                    <p style="color: white;">Si tienes necesiades especiales no dudes en contactarnos… ten la seguridad que contigo <br/>
+                hallaremos la solucion para el cuidado de tu principe o princesa</p>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proceso-vinculacion" class="bg-light-gray" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">                    
+                    <img src="<%= image_path( 'PorcesoVinculacion.png' ) %>" class="img-responsive" alt="">                            
+                </div>                
+            </div>            
+        </div>        
+    </section>
+
+    <!-- Nannies Section -->
+    <section id="nannies" style="background-color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading-left titulo">Nuestras Nannies</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/1.jpg' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Maria Esperanza Tafur**</h4>
+                        <p class="text-muted">8 años de experiencia con menores</p>    
+                        <span class="ratings"></span>                
+                    </div>
+                </div>
+               <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/1.jpg' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Paula Marcela García</h4>
+                        <p class="text-muted">5 años de experiencia con menores</p>    
+                        <span class="ratings"></span>                
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/1.jpg' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Erika Tatiana Velazquez**</h4>
+                        <p class="text-muted">4 años de experiencia con menores</p>    
+                        <span class="ratings"></span>                
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'nannies/JennyRuiz.png' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Jenny Ramos García</h4>
+                        <p class="text-muted">12 años de experiencia con menores</p>    
+                        <span class="ratings"></span>                
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'nannies/MargelizBaja.png' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Margelis Avila Arroyo**</h4>
+                        <p class="text-muted">7 años de experiencia con menores</p>    
+                        <span class="ratings"></span>                
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/1.jpg' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Sandra Alvarado Lesmes**</h4>
+                        <p class="text-muted">8 años de experiencia con menores</p>    
+                        <span class="ratings"></span>                
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/1.jpg' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Maria Alejandra Velazquez**</h4>
+                        <p class="text-muted">7 años de experiencia con menores</p>    
+                        <span class="ratings"></span>                
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/1.jpg' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Olga Montaño Gonzalez</h4>
+                        <p class="text-muted">5 años de experiencia con menores</p>    
+                        <span class="ratings"></span>                
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/1.jpg' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Hojanis Mejía Ospino**</h4>
+                        <p class="text-muted">8 años de experiencia con menores</p>    
+                        <span class="ratings"></span>                
+                    </div>
+                </div>
+            </div>  
+             <div class="row">
+            <div class="col-lg-12 text-center rcorners6" style="background-color: #E42786;">
+                    <p style="color: white;">**Técnica en Atención a la primera Infancia - Fomración SENA-Salud, Regional Bogotá</p>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading-right titulo">Nuestro equipo</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/RicardoOrtiz.png' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Ricardo Ortiz, CEO</h4>
+                        <p class="text-muted">Estrategia e Innovación</p>                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/AngelaGamez.png' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Angela Gámez, CFO</h4>
+                        <p class="text-muted">Financiero y Administración</p>                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/CristinaOrtiz.png' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Cristina Ortiz, CCO</h4>
+                        <p class="text-muted">Comunicación Gráfica</p>                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/CamiloMolano.png' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Camilo Molano, CTO</h4>
+                        <p class="text-muted">Tecnología y Programación</p>                        
+                    </div>
+                </div> 
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <img src="<%= image_path( 'team/MaryLuzPalomino.png' ) %>" class="img-responsive img-circle" alt="">
+                        <h4>Mary Luz Palomino, CHRO</h4>
+                        <p class="text-muted">Recursos Humanos</p>                        
+                    </div>
+                </div>                
+            </div>            
+        </div>
+    </section>
+
+    <!-- Aliados Section -->
+    <section id="aliados">
+        <div class="container">        
+            <div class="row">       
+
+                <div class="col-md-6"> 
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading-left titulo">Aliados</h2>
+                    </div>
+                </div>     
+                <br/>
+                <br/>              
+                    <div class="row">
+                        <div class="col-sm-6">                                                
+                            <a href="http://www.paycode.co">
+                                <img src="<%= image_path( 'logos/logoPayCODE.jpg' ) %>" class="img-responsive" alt="Paycode">
+                            </a>                                  
+                        </div> 
+                        <div class="col-sm-6">                 
+                            <a href="http://www.amesoft.co">
+                                <img src="<%= image_path( 'logos/Amesoft.PNG' ) %>" class="img-responsive" alt="Amesoft">
+                            </a>                         
+                        </div>
+                    </div>    
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-6">  
+                            <a href="http://www.cmabogadosasociados.com">
+                                <img src="<%= image_path( 'logos/creative-market.jpg' ) %>" class="img-responsive" alt="CMA"> 
+                            </a>                    
+                            
+                        </div> 
+                        <div class="col-sm-6">                
+                            <a href="http://www.mamasalataque.com">
+                                <img src="<%= image_path( 'logos/designmodo.jpg' ) %>" class="img-responsive" alt="MamasAlAtaque"> 
+                            </a>                                   
+                        </div>
+                    </div>                
+                </div>   
+                <div class="col-md-6">   
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading titulo">Entidades de Apoyo</h2>
+                        </div>
+                    </div>       
+                    <br/>
+                    <br/>     
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="<%= image_path( 'logos/logoUSergioSinfondo.png' ) %>" class="img-responsive" alt="">                    
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="<%= image_path( 'logos/logo-SenaSinfondo.png' ) %>" class="img-responsive" alt="">                    
+                        </div>                        
+                    </div>     
+                </div>                
+            </div> 
+            <br/>
+            <br/>           
+        </div>        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contactanos" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <h2 class="section-heading-left titulo">Contactanos</h2>
+                </div>
+                <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://www.facebook.com/nannyappco/">
+                                    <img href="" src="<%= image_path( 'redes_sociales/facebook.png' ) %>" class="img-responsive" alt="">
+                                </a>                                
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://twitter.com/Nanny_app">
+                                    <img href="https://www.w3schools.com" src="<%= image_path( 'redes_sociales/twitter.png' ) %>" class="img-responsive" alt="">
+                                </a>    
+                            </div>  
+                            <div class="col-md-4">
+                                <a href="https://www.instagram.com/nanny_app/">
+                                    <img href="https://www.w3schools.com" src="<%= image_path( 'redes_sociales/instagram.png' ) %>" class="img-responsive" alt="@nanny_app">
+                                </a>                                      
+                            </div>                        
+                        </div>   
+                        
+                    </div>
+            </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+   
+    <!-- jQuery -->
+    <script  src="https://code.jquery.com/jquery-1.12.4.min.js"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="  crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/assets/jqBootstrapValidation.js"></script>
+    <script src="/assets/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="/assets/agency.js"></script>
+
+</body>
+
+</html>
